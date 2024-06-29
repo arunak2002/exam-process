@@ -1,0 +1,567 @@
+<html>
+<head><title>Pliems Question</title>
+<style>
+.pro{
+font-family:courier;
+font-size:15pt;
+font-weight:bold;
+
+}
+.q{
+font-family:Arial;
+font-size:13pt;
+</style>
+<script language="javascript">
+var score = 0;
+function greet(){
+log = window.open("mainpage.html","NewWin",'toolbar = 1, status = 0');
+}
+function greet(){
+log = window.open("welcomepage.html","NewWin",'toolbar = 1, status = 0');
+}
+function say(){
+newwin = window.open("thankyoupage.html","NewWin",'toolbar = 1, status = 0');
+}
+function display(){
+//alert(document.form1.sname.value);
+//alert(document.form1.cname.value);
+if(document.form1.question1.value == 'c')
+	score++;
+if(document.form1.question2.value == 'd')
+	score++;
+if(document.form1.question3.value == 'd')
+	score++;
+if(document.form1.question4.value == 'c')
+	score++;
+if(document.form1.question5.value == 'b')
+	score++;
+if(document.form1.question6.value == 'b')
+	score++;
+if(document.form1.question7.value == 'a')
+	score++;
+if(document.form1.question8.value == 'c')
+	score++;
+if(document.form1.question9.value == 'c')
+	score++;
+if(document.form1.question10.value == 'b')
+	score++;
+if(document.form1.question11.value == 'd')
+	score++;
+if(document.form1.question12.value == 'd')
+	score++;
+if(document.form1.question13.value == 'c')
+	score++;
+if(document.form1.question14.value == 'b')
+	score++;
+if(document.form1.question15.value == 'b')
+	score++;
+if(document.form1.question16.value == 'c')
+	score++;
+if(document.form1.question17.value == '13')
+	score++;
+if(document.form1.question18.value == 'a')
+	score++;
+if(document.form1.question19.value == 'c')
+	score++;
+if(document.form1.question20.value == 'a')
+	score++;
+if(document.form1.question21.value == 'b')
+	score++;
+if(document.form1.question22.value == 'd')
+	score++;
+if(document.form1.question23.value == 'b')
+	score++;
+if(document.form1.question24.value == 'a')
+	score++;
+if(document.form1.question25.value == 'c')
+	score++;
+if(document.form1.question26.value == 'b')
+	score++;
+if(document.form1.question27.value == 'b')
+	score++;
+if(document.form1.question28.value == 'b')
+	score++;
+if(document.form1.question29.value == 'c')
+	score++;
+if(document.form1.question30.value == 'c')
+	score++;
+newwin = window.open("","NewWin",'toolbar = 0, status = 0, width=300, height=200');
+message = "<h1>Result</h2></br><ul><li><b>Student Name  : </b>"+ document.form1.sname.value;
+message += "<li><b>Department__: </b>"+ document.form1.dname.value;
+message += "<li><b>College Name  :</b> " + document.form1.cname.value;
+message += "<li><b>Total Score___:</b> " + score;
+newwin.document.write(message);
+}
+
+function give(){
+if(document.form1.pass.value == "sps"){
+	display();
+		}
+	else{
+	alert("Sorry!. Permission need to access the result.");
+	}
+}	
+</script>
+<body style="margin:30 30 30 30;" onload="">
+<h1 align='center' style="color:blue;text-shadow:15px 15px 15px gray;">PG <span style="color:green">&amp; </span><span style="color:#CC0033">RESEARCH DEPARTMENT </span><span style="color:#800000"> OF </span> <span style="color:#000077">COMPUTER SCIENCE </span></h1>
+<div style="background:url('sen.jpg');background-attachment:scroll;background-repeat:no-repeat;background-position:center">
+<form name="form1">
+<h1 align="center">Innovit <span style="color:red">19</span></h1>
+<center>
+	
+	
+	<h2>Student Login</h2>
+	<p style="color:black;font-family:courier;font-size:15pt;"><b>  Student Name : </b><input type="text" name="sname" size="50"></br>
+	<p style="color:black;font-family:courier;font-size:15pt;"><b>  Department___: </b><input type="text" name="dname" size="50"></br>
+	<p style="color:black;font-family:courier;font-size:15pt;"><b>  College Name : </b><input type="text" name="cname" size="50"></br></br>
+	</br></br></br>
+</div>
+</center>
+
+<div style="border:2px solid black;">
+<center><h1>Prelims Question ( 30 * 1 = 30 )</h2></center></br>
+<ol>
+	<li>
+	<p class="q">In C, if you pass an array as an argument to a function, what actually gets passed?</br>
+	<input type="radio" name="question1" value="a">A. Value of elements in array</br>
+	<input type="radio" name="question1" value="b">B. First element of the array</br>
+	<input type="radio" name="question1" value="c">C.Base address of the array</br>
+	<input type="radio" name="question1" value="d">D. Address of the last element of array</br>
+	</li>
+	<li>
+	<p class="q">What will the function rewind() do?</br>
+	<input type="radio" name="question2" value="a">A. Reposition the file pointer to a character reverse</br>
+	<input type="radio" name="question2" value="b">B. Reposition the file pointer stream to end of file</br>
+	<input type="radio" name="question2" value="c">C. Reposition the file pointer to begining of that line</br>
+	<input type="radio" name="question2" value="d">D. Reposition the file pointer to begining of file</br>
+	</li>
+	<li>
+	<p class="q">The keyword used to transfer control from a function back to the calling function is_____?</br>
+	<input type="radio" name="question3" value="a">A. switch</br>
+	<input type="radio" name="question3" value="b">B. goto</br>
+	<input type="radio" name="question3" value="c">C. go back</br>
+	<input type="radio" name="question3" value="d">D. return</br>
+	</li>
+	<li>
+	<p class="q">The library function used to find the last occurrence of a character in a string is__________?.</br>
+	<input type="radio" name="question4" value="a">A. strnstr() </br>
+	<input type="radio" name="question4" value="b">B. laststr() </br>
+	<input type="radio" name="question4" value="c">C. strrchr()</br>
+	<input type="radio" name="question4" value="d">D. strstr()</br>
+	</li>
+	<li>What will be the output of the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include&lt;stdio.h&gt;</br>
+
+int main()</br>
+{</br>
+    int k=1;</br>
+    printf("%d == 1 is" "%s\n", k, k==1?"TRUE":"FALSE");</br>
+    return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question5" value="a">A. k == 1 is TRUE</br>
+	<input type="radio" name="question5" value="b">B. 1 == 1 is TRUE</br>
+	<input type="radio" name="question5" value="c">C. 1 == 1 is FALSE</br>
+	<input type="radio" name="question5" value="d">D. K == 1 is FALSE</br>
+	</li>
+	<li>What will be the output of the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include&lt;stdio.h&gt;</br>
+
+int main()</br>
+{</br>
+    char *p;</br>
+    p="%d\n";</br>
+    p++;</br>
+    p++;</br>
+    printf(p-2, 23);</br>
+    return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question6" value="a">A. 21</br>
+	<input type="radio" name="question6" value="b">B. 23</br>
+	<input type="radio" name="question6" value="c">C. Error</br>
+	<input type="radio" name="question6" value="d">D. No Output</br>
+	</li>
+	<li>What will be the output of the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include&lt;stdio.h&gt;</br>
+
+int main()</br>
+{</br>
+    char p[] = "%d\n";</br>
+    p[1] = 'c';</br>
+    printf(p, 65);</br>
+    return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question7" value="a">A. A</br>
+	<input type="radio" name="question7" value="b">B. a</br>
+	<input type="radio" name="question7" value="c">C. c</br>
+	<input type="radio" name="question7" value="d">D. 65 Output</br>
+	</li>
+	<li>Point out the error in the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include&lt;stdio.h&gt;</br>
+
+int main()</br>
+{</br>
+    char ch;</br>
+    int i;</br>
+    scanf("%c", &i);</br>
+    scanf("%d", &ch);</br>
+    printf("%c %d", ch, i);</br>
+    return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question8" value="a">A. Error: suspicious char to in conversion in scanf()</br>
+	<input type="radio" name="question8" value="b">B. Error: we may not get input for second scanf() statement</br>
+	<input type="radio" name="question8" value="c">C. No error</br>
+	<input type="radio" name="question8" value="d">D. None of above</br>
+	</li>
+	<li>Point out the error in the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include&lt;stdio.h&gt;</br>
+	f(int a, int b)</br>
+{</br>
+    int a;</br>
+    a = 20;</br>
+    return a;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question9" value="a">A. Missing parenthesis in return statement</br>
+	<input type="radio" name="question9" value="b">B. The function should be defined as int f(int a, int b)</br>
+	<input type="radio" name="question9" value="c">C. Multiple declaration of 'a'</br>
+	<input type="radio" name="question9" value="d">D. None of above</br>
+	</li>
+	<li>Point out the error in the program ?</br>
+	<fieldset>
+	<code class="pro">
+	
+#include&lt;stdio.h&gt;</br>
+
+int main()</br>
+{</br>
+    fprintf("SIASC");</br>
+    printf("%.ef", 2.0);</br>
+    return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question10" value="a">A.Error: unknown value in printf() statement.</br>
+	<input type="radio" name="question10" value="b">B. Error: in 'fprintf' statement.</br>
+	<input type="radio" name="question10" value="c">C. No error and prints "SIASC"</br>
+	<input type="radio" name="question10" value="d">D. No error and prints "2.0"</br>
+	</li>
+<hr noshade size="5">
+	<li>
+	<p class="q">C++ can be said to be as C language with?</br>
+	<input type="radio" name="question11" value="a">A. Structures</br>
+	<input type="radio" name="question11" value="b">B. Functions</br>
+               <input type="radio" name="question11" value="c">C. Global data</br>
+               <input type="radio" name="question11" value="d">D. Classes</br>
+	</li>
+	<li>
+	<p class="q">Which of the following statement is correct?</br>
+	<input type="radio" name="question12" value="a">A. The default value for an argument cannot be function call.</br>
+	<input type="radio" name="question12" value="b">B. C++ allows the redefinition of a default parameter.</br>
+	<input type="radio" name="question12" value="c">C. Both A and B.</br>
+	<input type="radio" name="question12" value="d">D. C++ does not allow the redefinition of a default parameter.</br>
+	</li>
+	<li>
+	<p class="q">Which of the following access specifier is used as a default in a class definition?</br>
+	<input type="radio" name="question13" value="a">A. protected</br>
+	<input type="radio" name="question13" value="b">B. public</br>
+	<input type="radio" name="question13" value="c">C. private</br>
+	<input type="radio" name="question13" value="d">D. friend</br>
+	</li>
+	<li>
+	<p class="q">Which of the following statements is correct?</br>
+	<input type="radio" name="question14" value="a">A. Base class pointer cannot point to derived class.</br>
+	<input type="radio" name="question14" value="b">B. Derived class pointer cannot point to base class.</br>
+	<input type="radio" name="question14" value="c">C. Pointer to derived class cannot be created.</br>
+	<input type="radio" name="question14" value="d">D. Pointer to base class cannot be created.</br>
+	</li>
+	<li>What will be the output of the program ?</br>
+	<fieldset>
+	<code class="pro">
+	
+#include<iostream.h> </br>
+void MyFunction(int a, int b = 40)</br>
+{</br>
+    cout<< " a = "<< a << " b = " << b << endl;</br>
+}</br>
+int main()</br>
+{</br>
+    MyFunction(20, 30);</br>
+    return 0; </br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question15" value="a">A. a = 20 b = 40</br>
+	<input type="radio" name="question15" value="b">B. a = 20 b = 30</br>
+	<input type="radio" name="question15" value="c">C. a = 20 b = Garbage</br>
+	<input type="radio" name="question15" value="d">D. a = Garbage b = 40</br>
+	</li>
+	<li>What will be the output of the program ?</br>
+	<fieldset>
+	<code class="pro">
+#include &lt;iostream.h&gt;</br>
+#include&lt;conio.h&gt;</br>
+class test</br>
+{</br>
+};</br>
+int main()</br>
+{</br>
+   test testObj;</br>
+   <p>cout<<"size ="  <<  sizeof(testObj);</br></p>
+   return 0;</br>
+}</br>
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question16" value="a">A. Error</br>
+	<input type="radio" name="question16" value="b">B. size =Garbage</br>
+	<input type="radio" name="question16" value="c">C. size =1</br>
+	<input type="radio" name="question16" value="d">D. none of these</br>
+	</li>
+	<li>Look at the Program and Answer the Question.</br>
+	
+	<fieldset>
+	<code  class="pro">
+	#include &lt;iostream.h&gt;</br>
+	void main()</br>
+{</br>
+		int i, j;</br>
+i=j=2,3;</br>
+		
+		while(--i&&j++)</br>
+		cout&lt;&lt;i&lt;&lt;j;</br>
+		return 0;</br>
+		}</br>
+	</code>	
+	</fieldset>
+	<p class="q">Enter the Output of the Program.</br>
+	<p>Answer:<input type="text" name="question17"></br>
+	</li>
+	<li>Point out the error in the program ?</br>
+	<fieldset>
+	<code class="pro">
+	#include &lt;iostream.h&gt;</br>
+int main()</br>
+{</br>
+int i;</br>
+i=10;</br>
+for(;;);</br>
+<p>cout << i;</p>
+return 0;</br>
+}</br>
+
+	</code>	
+	</fieldset>
+	
+	<input type="radio" name="question18" value="a">A. None of these.</br>
+	<input type="radio" name="question18" value="b">B. line number 4 </br>
+	<input type="radio" name="question18" value="c">C. line number 8 </br>
+	<input type="radio" name="question18" value="d">D. line number 5 </br>
+	</li>
+			<li>Look at the Program and Answer the Question.</br>
+	<fieldset>
+	<code class="pro">
+	#include &lt;iostream.h&gt</br>
+	int main()</br>
+	    {</br>
+		int a = 10, b = 25;</br>
+		a = b++ + a++;</br>
+		b = ++b + a++;</br>
+		
+		printf("%d %d ",a,b);</br>
+		}</br>
+	</code>
+</fieldset>	
+	<p class="q">What is the Output of this code__________?.</br>
+	<input type="radio" name="question19" value="a">A. 36 64</br>
+	<input type="radio" name="question19" value="b">B. 35 62</br>
+	<input type="radio" name="question19" value="c">C. 37 63</br>
+	<input type="radio" name="question19" value="d">D. 30 28</br>
+	</li>
+	<li>How many times above loop will be execute ?</br>
+	<fieldset>
+	<code class="pro">
+	#include &lt;iostream.h&gt;</br>
+	void main()</br>
+	 {</br>
+		int n=10,i=0;</br>
+		while(1);</br>
+		{</br>
+printf("END/n");</br>
+n++;</br>
+getch();</br>
+}</br>
+}</br>
+	</code>	
+	</fieldset>
+	<input type="radio" name="question20" value="a">A. Infinite END</br>
+	<input type="radio" name="question20" value="b">B. 10</br>
+	<input type="radio" name="question20" value="c">C. 0</br>
+	<input type="radio" name="question20" value="d">D. 1</br>
+	</li>
+<hr noshade size="5">
+	<li>
+	<p class="q"> When does method overloading is determined?</br>
+	<input type="radio" name="question21" value="a">A.  At run time</br>
+	<input type="radio" name="question21" value="b">B. At compile time</br>
+	<input type="radio" name="question21" value="c">C. At coding time</br>
+	<input type="radio" name="question21" value="d">D. At execution time</br>
+	</li>
+	<li>
+	<p class="q"> Which concept of java is a way of converting real world objects in terms of class?</br>
+	<input type="radio" name="question22" value="a">A. Inheritance</br>
+	<input type="radio" name="question22" value="b">B. Encapsulation</br>
+	<input type="radio" name="question22" value="c">C. Polymorphism</br>
+	<input type="radio" name="question22" value="d">D. Abstraction</br>
+	</li>
+	<li>
+	<p class="q">What is the range of short data type in Java?</br>
+	<input type="radio" name="question23" value="a">A. -128 to 127</br>
+	<input type="radio" name="question23" value="b">B. -32768 to 32767 </br>
+	<input type="radio" name="question23" value="c">C. -2147483648 to 2147483647</br>
+	<input type="radio" name="question23" value="d">D. None of the mentioned</br>
+	</li>
+	<li>
+	<p class="q">Which of the following is a type of polymorphism in Java?</br>
+	<input type="radio" name="question24" value="a">A. Compile time polymorphism</br>
+	<input type="radio" name="question24" value="b">B. Execution time polymorphism</br>
+	<input type="radio" name="question24" value="c">C. Multiple polymorphism</br>
+	<input type="radio" name="question24" value="d">D. Multilevel polymorphism</br>
+	</li>
+	<li class="q">What is the Output of the following Program?
+	</fieldset>
+	<fieldset>
+	<code class="pro">
+	<ol>
+	<li>class A{</br>
+	<li>public static void main(String[] args){</br>
+		<li>int i=10,20,30;</br>
+		<li>System.out.println(i);</br>
+		<li>}</br>
+		<li>}</br>
+	</ol>
+	</code>
+	</fieldset>
+	</br>
+	<input type="radio" name="question25" value="a">A. 10,20,30</br>
+	<input type="radio" name="question25" value="b">B. 20</br>
+	<input type="radio" name="question25" value="c">C. 10</br>
+	<input type="radio" name="question25" value="d">D. Error</br></br>
+	</li>
+	<li class="q">What is the Output of the following Program?
+	<fieldset>
+	<code class="pro">
+	<ol>
+	<li>class B{</br>
+	<li>public static void main(String[] args){</br>
+		<li>int i=1;</br>
+		<li> i=2+2*i++;</br>
+		<li>System.out.println(i);</br>
+		<li>}</br>
+		<li>}</br>
+	</ol>
+	</code>	
+	</fieldset>
+	</br>
+	<input type="radio" name="question26" value="a">A. 4</br>
+	<input type="radio" name="question26" value="b">B. 5</br>
+	<input type="radio" name="question26" value="c">C. 6</br>
+	<input type="radio" name="question26" value="d">D. 7</br></br>
+	</li>
+	<li class="q">What is the Output of the following Program?
+	<fieldset>
+	<code class="pro">
+	    class array_output </br>
+	    {</br>
+	        public static void main(String args[]) </br>
+	        {</br>
+	            int array_variable[][] = {{ 1, 2, 3}, { 4 , 5, 6}, { 7, 8, 9}};</br>
+	            int sum = 0;</br>
+	            for (int i = 0; i < 3; ++i)</br>
+	                for (int j = 0; j <  3 ; ++j)</br>
+	                    sum = sum + array_variable[i][j];</br>
+	            System.out.print(sum / 5);</br>
+  	    	  } </br>
+	    }</br>
+	</code>	
+	</fieldset>
+	</br>
+	<input type="radio" name="question27" value="a">A. 8</br>
+	<input type="radio" name="question27" value="b">B. 9</br>
+	<input type="radio" name="question27" value="c">C. 10</br>
+	<input type="radio" name="question27" value="d">D. 11</br></br>
+	</li>
+	<li  class="q">Point out the error line of the following Program?
+	<fieldset>
+	<code class="pro">
+	<ol>
+	<li>class AA{</br>
+	<li>public static void main(String[] args){</br>
+		<li>int i=5,j;</br>
+		<li>j=++i+++i+++i;</br>
+		<li>System.out.println(i+""+j);</br>
+		<li>}</br>
+		<li>}</br>
+	</ol>
+	</code>	
+	</fieldset>
+	</br>
+	<input type="radio" name="question28" value="a">A. line number 4</br>
+	<input type="radio" name="question28" value="b">B. None of these</br>
+	<input type="radio" name="question28" value="c">C. line number 6</br>
+	<input type="radio" name="question28" value="d">D. line number 5</br></br>
+	</li>
+
+	<li>
+	<p class="q">Which of these operators is used to allocate memory to array variable in Java?</br>
+	<input type="radio" name="question29" value="a">A. malloc</br>
+	<input type="radio" name="question29" value="b">B. alloc</br>
+	<input type="radio" name="question29" value="c">C. new</br>
+	<input type="radio" name="question29" value="d">D. new malloc</br>
+	</li>
+	<li>
+	<p class="q">Which data type value is returned by all transcendental math functions?</br>
+	<input type="radio" name="question30" value="a">A. int</br>
+	<input type="radio" name="question30" value="b">B. float</br>
+	<input type="radio" name="question30" value="c">C. double</br>
+	<input type="radio" name="question30" value="d">D. long</br>
+	</li>
+	</br></br>
+	<center><input type="button" value="SUBMIT" onclick="say();"></center>
+</div>	</br>
+</br></br>
+
+<div style="background:gray">
+<hr noshade size="5">
+<p align="right">&copy;Mr.Black(sasi) & Mr.Smart Joker(pavendan)</br>
+<p align="center" style="font-size:15pt;"><b>Action: </b><input type="password" name="pass" value="">
+<input type="button" value="Go" size='20'onclick="give();">
+</div>
+</form>
+</body>
+</html>
